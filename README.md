@@ -33,7 +33,7 @@ $ wexp build --watch
 ```bash
 $ npm i wexp -S --production
 ```
-选择开发者工具->顶部工具->构建npm就好
+选择开发者工具->顶部工具->构建npm就好 
 
 ### wexp项目的目录结构
 
