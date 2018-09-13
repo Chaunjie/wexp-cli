@@ -9,7 +9,7 @@ wexp项目的创建与使用的安装或更新都通过`npm`进行。
 **全局安装或更新WePY命令行工具**
 
 ```bash
-$ install wexp-cli -g
+$ npm install wexp-cli -g
 ```
 
 **在开发目录中生成Demo开发项目**
