@@ -1,10 +1,11 @@
 {
   "name": "wexp-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "wexp-cli",
   "main": "./wexp/index.js",
   "scripts": {
     "test": "node ./bin/wexp.js",
+    "testv": "node ./bin/wexp.js -v",
     "dev": "node ./bin/wexp.js build -w",
     "build": "node ./bin/wexp.js build",
     "babel": "rm -rf wexp/dist && babel --presets es2015,stage-1 wexp --out-dir ./wexp/dist",
