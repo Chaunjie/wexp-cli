@@ -1,6 +1,6 @@
 {
   "name": "wexp-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "wexp-cli",
   "main": "./wexp/index.js",
   "scripts": {
@@ -39,7 +39,5 @@
     "uglify-js": "^3.4.9",
     "xmldom": "^0.1.27"
   },
-  "devDependencies": {
-    "postcss-less": "^2.0.0"
-  }
+  "devDependencies": {}
 }

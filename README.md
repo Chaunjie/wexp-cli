@@ -2,23 +2,21 @@
 
 ## 快速入门指南
 
-### wexp项目的创建与使用
+### 使用 npm 创建 wexp 项目
 
-wexp项目的创建与使用的安装或更新都通过`npm`进行。
-
-**全局安装或更新WePY命令行工具**
+**全局安装或更新 wexp 命令行工具**
 
 ```bash
 $ npm install wexp-cli -g
 ```
 
-**在开发目录中生成Demo开发项目**
+**在工作目录下创建示例项目**
 
 ```bash
 $ wexp init wexp-demo myproject
 ```
 
-**切换至项目目录**
+**进入项目**
 
 ```bash
 $ cd myproject
@@ -29,11 +27,28 @@ $ cd myproject
 ```bash
 $ wexp build --watch
 ```
-使用开发者工具选定dist目录预览
+
+**进入 dist 目录**
+
+```bash
+$ cd dist
+```
+
+**生成 package.json 文件**
+
+```bash
+$ npm init
+```
+
+**安装核心包**
+
 ```bash
 $ npm i wexp -S --production
 ```
-选择开发者工具->顶部工具->构建npm就好 
+
+**构建 npm**
+
+微信开发者工具->菜单栏【工具】->构建npm
 
 ### wexp项目的目录结构
 
@@ -50,7 +65,7 @@ $ npm i wexp -S --production
 |   ├── pages              wexp页面目录（属于完整页面）
 |   |   ├── index.xu       index页面（经build后，会在dist目录下的pages目录生成index.js、index.json、index.wxml和index.wxss文件）
 |   |   └── other.xu       other页面（经build后，会在dist目录下的pages目录生成other.js、other.json、other.wxml和other.wxss文件）
-|   └── app.wpy            小程序配置项（全局数据、样式、声明钩子等；经build后，会在dist目录下生成app.js、app.json和app.wxss文件）
+|   └── app.xu             小程序配置项（全局数据、样式、声明钩子等；经build后，会在dist目录下生成app.js、app.json和app.wxss文件）
 
 ```
 
@@ -182,7 +197,7 @@ $ npm i wexp -S --production
 
     tapPro (e) {
       this.setData({name: '组件更新信息后显示'})
-      // wx.navigateTo({url: '../test/index'})
+      this.$route('navigate', '../test/index')
     }
   }
 </script>
