@@ -20,6 +20,7 @@ $ wexp init wexp-demo myproject
 
 ```bash
 $ cd myproject
+$ npm install
 ```
 
 **开启实时编译**
@@ -128,7 +129,7 @@ $ npm i wexp -S --production
 </script>
 ```
 
-#### 页面(xxx.xu)
+#### 页面(index.xu)
 ```javascript
 <style>
   .container{
@@ -203,7 +204,7 @@ $ npm i wexp -S --production
 </script>
 ```
 
-### 组件(xxx.xu)
+### 组件(index.xu)
 ```javascript
 <template>
   <view class="custom-class" bindtap="tap" data-index="{{tag}}">{{text}}</view>
