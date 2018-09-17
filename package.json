@@ -1,6 +1,6 @@
 {
   "name": "wexp-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "wexp-cli",
   "main": "./wexp/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "keywords": [
     "wexp-cli"
   ],
-  "author": "chuanjie",
+  "author": "chaunjie",
   "license": "ISC",
   "dependencies": {
     "babel-cli": "^6.26.0",
