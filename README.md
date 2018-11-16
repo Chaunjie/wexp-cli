@@ -29,6 +29,15 @@ $ npm install
 $ wexp build --watch
 ```
 
+**npm组件使用方法**
+
+原生组件库（wexp版本组件）无需添加额外的引入操作，按照原生引用组件的方式一样，wexp组件写法请参照([wexp组件创建教程](https://github.com/Chaunjie/wexp-button))
+
+```bash
+usingComponents: {
+  "k-test": "npm_module/path/index"
+}
+```
 
 **构建 npm**
 
@@ -50,16 +59,6 @@ $ wexp build --watch
 |   |   └── other.xu       other页面（经build后，会在dist目录下的pages目录生成other.js、other.json、other.wxml和other.wxss文件）
 |   └── app.xu             小程序配置项（全局数据、样式、声明钩子等；经build后，会在dist目录下生成app.js、app.json和app.wxss文件）
 
-```
-
-**npm组件使用方法**
-
-原生组件库（wexp版本组件）无需添加额外的引入操作，按照原生引用组件的方式一样，wexp组件写法请参照([wexp组件创建教程](https://github.com/Chaunjie/wexp-button))
-
-```bash
-usingComponents: {
-  "k-test": "npm_module/path/index"
-}
 ```
 
 ## 用法
