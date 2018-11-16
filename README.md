@@ -29,23 +29,6 @@ $ npm install
 $ wexp build --watch
 ```
 
-**进入 dist 目录**
-
-```bash
-$ cd dist
-```
-
-**生成 package.json 文件**
-
-```bash
-$ npm init
-```
-
-**安装核心包**
-
-```bash
-$ npm i wexp -S --production
-```
 
 **构建 npm**
 
@@ -54,11 +37,10 @@ $ npm i wexp -S --production
 ### wexp项目的目录结构
 
 ```
-├── dist
-|   ├── node_modules       小程序npm包  
-|   ├── miniprogram_npm    小程序npm构建后的包
-|   |   ├── wexp           wexp项目运行核心文件
-|   └── package.json       项目的package配置          
+├── dist                   开发者工具运行目录 
+|
+├── node_modules           小程序npm包（支持原生小程序组件库npm包以及wexp版本的组件）
+|       
 ├── src                    代码编写的目录（该目录为使用wexp后的开发目录）
 |   ├── components         wexp组件目录（组件不属于完整页面，仅供完整页面或其他组件引用）
 |   |   ├── a.xu           可复用的wexp组件a
@@ -70,6 +52,15 @@ $ npm i wexp -S --production
 
 ```
 
+**npm组件使用方法**
+
+原生组件库（wexp版本组件）无需添加额外的引入操作，按照原生引用组件的方式一样，wexp组件写法请参照(wexp组件创建教程)(https://github.com/Chaunjie/wexp-button)
+
+```bash
+usingComponents: {
+  "k-test": "npm_module/path/index"
+}
+```
 
 ## 用法
 ### 说明(用法)
@@ -77,7 +68,7 @@ $ npm i wexp -S --production
 ```javascript
 <style lang="less" src="./less/index.less"></style>
 <script>
-  import wexp from 'wexp/index'
+  import wexp from 'wexp'
   import regeneratorRuntime from './compile/runtime'
 
   export default class extends wexp.app{
@@ -147,7 +138,7 @@ $ npm i wexp -S --production
   <view>{{syncItem}}</view>
 </template>
 <script>
-  import wexp from 'wexp/index'
+  import wexp from 'wexp'
   import regeneratorRuntime from '../../compile/runtime'
 
   export default class Index extends wexp.page{
@@ -210,7 +201,7 @@ $ npm i wexp -S --production
   <view class="custom-class" bindtap="tap" data-index="{{tag}}">{{text}}</view>
 </template>
 <script>
-  import wexp from 'wexp/index'
+  import wexp from 'wexp'
   export default class Test extends wexp.component{
     config = {
       "component": true
