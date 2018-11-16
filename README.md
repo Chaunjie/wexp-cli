@@ -26,7 +26,7 @@ $ npm install
 **开启实时编译**
 
 ```bash
-$ wexp build --watch
+$ npm run dev
 ```
 
 **npm组件使用方法**
