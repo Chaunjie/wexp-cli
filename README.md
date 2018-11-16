@@ -54,7 +54,7 @@ $ wexp build --watch
 
 **npm组件使用方法**
 
-原生组件库（wexp版本组件）无需添加额外的引入操作，按照原生引用组件的方式一样，wexp组件写法请参照(wexp组件创建教程)(https://github.com/Chaunjie/wexp-button)
+原生组件库（wexp版本组件）无需添加额外的引入操作，按照原生引用组件的方式一样，wexp组件写法请参照([wexp组件创建教程](https://github.com/Chaunjie/wexp-button))
 
 ```bash
 usingComponents: {
