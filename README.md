@@ -17,7 +17,7 @@ $ npm install wexp-cli -g
 $ wexp init wexp-demo myproject
 ```
 
-集成wexp-redux项目
+集成wexp-redux项目(`wexp-cli^1.0.6`)
 ```bash
 $ wexp init wexp-redux-demo myproject
 ```
