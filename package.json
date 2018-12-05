@@ -1,6 +1,6 @@
 {
   "name": "wexp-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "wexp-cli",
   "main": "./wexp/index.js",
   "scripts": {
