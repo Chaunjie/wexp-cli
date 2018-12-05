@@ -12,9 +12,14 @@ $ npm install wexp-cli -g
 
 **在工作目录下创建示例项目**
 
-// 普通wexp项目
+普通wexp项目
 ```bash
 $ wexp init wexp-demo myproject
+```
+
+集成wexp-redux项目
+```bash
+$ wexp init wexp-redux-demo myproject
 ```
 
 **进入项目**
