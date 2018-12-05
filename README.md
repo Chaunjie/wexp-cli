@@ -12,6 +12,7 @@ $ npm install wexp-cli -g
 
 **在工作目录下创建示例项目**
 
+// 普通wexp项目
 ```bash
 $ wexp init wexp-demo myproject
 ```
