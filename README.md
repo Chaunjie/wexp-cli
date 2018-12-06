@@ -10,6 +10,12 @@
 $ npm install wexp-cli -g
 ```
 
+**更新wexp-cli**
+
+```bash
+$ wexp upgrade
+```
+
 **在工作目录下创建示例项目**
 
 普通wexp项目
